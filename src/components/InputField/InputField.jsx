@@ -1,6 +1,7 @@
 import React from 'react';
 
 const InputField = ({value, onChange, placeholderText}) => {
+  console.log
   return (
     <div>
       <input
