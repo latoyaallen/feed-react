@@ -1,15 +1,15 @@
+import styles from './InputField.module.css';
 import React from 'react';
 
-const InputField = ({value, onChange, placeholderText}) => {
-  console.log
+const InputField = ({value, onChange, labelAboveField }) => {
   return (
     <div>
+      {labelAboveField}
       <input
           value={value}
           onChange={onChange}
           type="text"
-          placeholder={placeholderText}
-          className="input"
+          className={styles['wrapper']}
         />
     </div>
   );

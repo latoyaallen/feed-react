@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Button from '../Button';
 import InputField from '../InputField';
+import styles from './Form.module.css';
 
 const Form = () => {
   // fyi: an author can be a user or an org.
@@ -16,16 +17,16 @@ const Form = () => {
   }
 
   return (
-    <div>
+    <div className={styles['wrapper']}>
       <InputField
         value={authorName}
         onChange={(e) => setAuthorName(e.target.value)}
-        placeholderText="Enter User or Org Name"
+        labelAboveField="User or Organization Name"
       />
       <InputField
         value={repoName}
         onChange={(e) => setRepoName(e.target.value)}
-        placeholderText="Enter Repository Name"
+        labelAboveField="Repository Name"
       />
       <Button
       onClick={handleOnClick}
