@@ -1,2 +1,10 @@
+/*
+ * https://www.awwwards.com/inspiration/form-input
+ */
+
 .wrapper {
+  width: 20vw; /* take up 50 percent of the viewport width*/
+  margin-left: 40vw;
 }
+
+

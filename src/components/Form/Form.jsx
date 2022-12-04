@@ -21,12 +21,12 @@ const Form = () => {
       <InputField
         value={authorName}
         onChange={(e) => setAuthorName(e.target.value)}
-        labelAboveField="User or Organization Name"
+        placeholder="User or Org"
       />
       <InputField
         value={repoName}
         onChange={(e) => setRepoName(e.target.value)}
-        labelAboveField="Repository Name"
+        placeholder="Repository"
       />
       <Button
       onClick={handleOnClick}

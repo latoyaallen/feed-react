@@ -1,17 +1,17 @@
 import styles from './InputField.module.css';
 import React from 'react';
 
-const InputField = ({value, onChange, labelAboveField }) => {
+const InputField = ({value, onChange, placeholder }) => {
   return (
-    <div>
-      {labelAboveField}
+    <div className={styles['input-field-container']}>
       <input
-          value={value}
-          onChange={onChange}
-          type="text"
-          className={styles['wrapper']}
-        />
-    </div>
+      value={value}
+      onChange={onChange}
+      type="text"
+      className={styles['input-field']}
+      placeholder={placeholder}
+    />
+      </div>
   );
 }
 
@@ -19,4 +19,4 @@ export default InputField;
 
 /*
   https://stackoverflow.com/questions/65409862/how-to-create-a-reusable-input-field-using-react
-*/
+  */

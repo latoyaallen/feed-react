@@ -1,6 +1,10 @@
-.wrapper {
-  border-radius: 25px;
-  height: 50px;
-  width: 500px;
-  margin-bottom: 50px;
+.input-field {
+  width: 150px;
+  overflow: visible;
+  background-color: white;
+  border-color: red;
+  text-decoration: none;
+  padding: 100px 193px;
+  font-size: 29px;
 }
+
