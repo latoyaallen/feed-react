@@ -4,7 +4,8 @@ import Button from '../Button';
 const Feed = ({pathname}) => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const token = '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'
+    // https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
+    const token = 'todo'
     const splitPath = pathname.split("/");
     const authorName = splitPath[1];
     const repoName = splitPath[2];
